@@ -1,0 +1,178 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eef1f5;
+    color: #263445;
+    text-align: center;
+}
+
+
+header {
+    background-color: #172c46;
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    color: #ff4b5c;
+    margin-bottom: 5px;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 12px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff4b5c;
+}
+
+/* Sections */
+section {
+    padding: 30px 15px;
+    border-bottom: 2px solid #c7cdd5;
+}
+
+h2 {
+    color: #c62838;
+}
+
+hr {
+    width: 80%;
+    border: 1px solid #c62838;
+    margin-bottom: 25px;
+}
+
+
+.profile {
+    width: 210px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #c62838;
+    transition: 0.4s;
+}
+
+.profile:hover {
+    transform: scale(1.07);
+    box-shadow: 0 5px 20px #888;
+}
+
+#about p {
+    max-width: 650px;
+    margin: 20px auto;
+    line-height: 1.7;
+}
+
+/* Skills Table */
+table {
+    margin: auto;
+    width: 60%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th {
+    background-color: #172c46;
+    color: white;
+}
+
+td, th {
+    border: 1px solid #c62838;
+    padding: 12px;
+}
+
+tr:hover {
+    background-color: #fce4e6;
+}
+
+/* Projects */
+.project {
+    background-color: white;
+    width: 55%;
+    margin: 15px auto;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+}
+
+.project h3 {
+    color: #c62838;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px #aaa;
+}
+
+/* Contact Form */
+input, textarea {
+    width: 90%;
+    padding: 8px;
+    border: 1px solid #888;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #c62838;
+    color: white;
+    border: none;
+    padding: 10px 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #172c46;
+    transform: scale(1.05);
+}
+
+
+.back {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #172c46;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.back:hover {
+    background-color: #c62838;
+}
+
+
+footer {
+    background-color: #172c46;
+    color: white;
+    padding: 12px;
+}
+
+
+section {
+    animation: appear 0.8s ease-in;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
